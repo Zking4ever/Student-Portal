@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensures the page never scrolls */
+    background-color: #fdfcfb;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Custom Serif Font for the "Space" and "Quote" */
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Standard Sans Font for inputs and labels */
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* This creates that warm, vintage photo feel on the left side */
+  .backdrop-sepia-\[0\.2\] {
+    backdrop-filter: sepia(0.2);
+  }
+}
+
+/* Smooth transitions for the tab switching */
+input::placeholder {
+  color: #d1d5db; /* stone-300 */
+}
+
+/* Hide scrollbars for the form side if content overflows slightly on small screens */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
