@@ -1,13 +1,20 @@
-# Student-Portal
-A fully customizable student management portal originally built for a Web Programming course project, designed to evolve into a scalable platform for managing students, courses, communication, and academic workflows.
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-## ✨ Features (Planned & Implemented)
+# Run and deploy your AI Studio app
 
-- 👨‍🎓 Student registration and profile management  
-- 🏫 Course management system  
-- 📚 Enrollment tracking  
-- 📝 Assignment and grading support  
-- 📊 Academic performance tracking  
-- 🔐 Authentication and role-based access  
-- 📢 Notifications and announcements  
-- ⚙️ Fully customizable architecture
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/c73c6c53-1e03-46f0-95fe-03a8530e854d
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

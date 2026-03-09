@@ -4,17 +4,15 @@
  */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { GraduationCap, Lock, User, ArrowRight, Heart, Sparkles, BookOpen } from 'lucide-react';
 
-type UserRole = 'student' | 'teacher';
-
 export default function App() {
-  const [role, setRole] = useState<UserRole>('student');
+  const [role, setRole] = useState('student');
   const [idNumber, setIdNumber] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(`Logging in as ${role}:`, { idNumber, password });
   };
